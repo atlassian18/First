@@ -1,0 +1,28 @@
+<atlassian-user>
+    <repositories>
+    
+<ldap key="ldapRepository" name="FNBO LDAP Repository cSfg45HB5yGr6PtV" cache="true">
+			<host>tcmasterdc04p.fnb.fnni.com</host>
+			<port>389</port>
+			<securityPrincipal>CN=FNITBAMBOO_SVC,OU=Services,OU=ACCOUNTS,DC=fnb,DC=fnni,DC=com</securityPrincipal>
+			<securityCredential></securityCredential>
+			<securityProtocol>plain</securityProtocol>
+			<securityAuthentication>simple</securityAuthentication>
+			<baseContext>dc=fnni,dc=com</baseContext>
+
+			<baseUserNamespace>DC=fnni,DC=com</baseUserNamespace>
+			<baseGroupNamespace>OU=Group,OU=Accounts,DC=fnb,DC=fnni,DC=com</baseGroupNamespace>
+			<usernameAttribute>sAMAccountName</usernameAttribute>
+			<userSearchFilter>(objectClass=person)</userSearchFilter>
+			<firstnameAttribute>givenname</firstnameAttribute>
+			<surnameAttribute>sn</surnameAttribute>
+			<emailAttribute>mail</emailAttribute>
+			<groupnameAttribute>cn</groupnameAttribute>
+			<groupSearchFilter>(objectClass=dummyValue)</groupSearchFilter>
+			<membershipAttribute>member</membershipAttribute>
+			<userSearchAllDepths>true</userSearchAllDepths>
+			<groupSearchAllDepths>false</groupSearchAllDepths>
+	  </ldap>
+        <hibernate name="Hibernate Repository" key="hibernateRepository" description="Hibernate Repository" cache="true"/>
+    </repositories>
+</atlassian-user>
